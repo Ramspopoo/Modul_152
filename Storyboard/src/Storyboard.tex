@@ -1,0 +1,40 @@
+%! Author = hilfiker
+%! Date = 21.07.2022
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage{amsmath} % Formulas in document
+\usepackage{pdflscape} % Landscaped pages in Pdf
+\usepackage[a4paper, margin=0.8in]{geometry} % Set the margin and size of a page
+\usepackage[hidelinks]{hyperref} % Remove Boxes around Hyperlinks
+\usepackage{lastpage} % Custom page numbering
+\usepackage{fancyhdr}
+\usepackage{graphicx} % Custom page numbering
+
+% Configure page numbering & footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{Tobias Hilfiker}
+\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\rfoot{\today}
+
+% Methadata
+\title{\includegraphics{media/frontpage.jpg}
+Modul 152 \\
+Multimediainhalte in einen Webauftritt integrieren}
+\author{Tobias Hilfiker}
+\date{\today}
+
+% Document
+\begin{document}
+
+    % Frontpage
+    \maketitle
+    \pagebreak
+
+    %Table of contents
+    \tableofcontents
+
+\end{document}
