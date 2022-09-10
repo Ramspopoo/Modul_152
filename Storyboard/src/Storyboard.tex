@@ -11,30 +11,78 @@
 \usepackage[hidelinks]{hyperref} % Remove Boxes around Hyperlinks
 \usepackage{lastpage} % Custom page numbering
 \usepackage{fancyhdr}
-\usepackage{graphicx} % Custom page numbering
+\usepackage{graphicx}
+\usepackage{tcolorbox} % Custom page numbering
 
 % Configure page numbering & footer
 \pagestyle{fancy}
 \fancyhf{}
 \lfoot{Tobias Hilfiker}
-\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\cfoot{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
 \rfoot{\today}
 
 % Methadata
-\title{\includegraphics{media/frontpage.jpg}
-Modul 152 \\
-Multimediainhalte in einen Webauftritt integrieren}
+\title{
+    \includegraphics{media/frontpage.jpg}
+    Modul 152 \\
+    Multimediainhalte in einen Webauftritt integrieren}
 \author{Tobias Hilfiker}
 \date{\today}
 
 % Document
 \begin{document}
 
-    % Frontpage
+    %Kapitel Frontpage
     \maketitle
     \pagebreak
 
-    %Table of contents
+    %Kapitel Table of contents
     \tableofcontents
+    \pagebreak
+
+    %Kapitel 1 - Einleitung
+    \section{Einleitung}
+
+    %Kapitel 2 - Thema
+    \section{Thema}
+
+    %Kapitel 2.1 - Wahl des Themas
+    \subsection{Wahl des Themas}
+
+    %Kapitel 3 - Visualisierung E-Portfolio
+    \section{Visualisierung E-Portfolio}
+
+    %Kapitel 3.1 - Menüstruktur
+    \subsection{Menüstruktur}
+
+    %Kapitel 3.2 - Mockups
+    \subsection{Mockups}
+    - Mockups mit Adobe xd -> Wieso
+    - Bilder der Mockups einfügen
+
+    %Kapitel 4 - Bildbearbeitung
+    \section{Bildbearbeitung}
+
+    %Kapitel 4.1 - Bildbearbeitungsmethode
+    \subsection{Bildbearbeitungsmethode}
+
+    %Kapitel 5 - Logo
+    \section{Logo}
+
+    %Kapitel 5.1 - Idee
+    \subsection{Idee}
+
+    %Kapitel 6 - Technisches Konzept E-Portfolio
+    \section{Technisches Konzept E-Portfolio}
+
+    %Kapitel 7 - Reflexion
+    \section{Reflexion}
+
+    %Kapitel 7.1 - Bildbearbeitung
+    \subsection{Bildbearbeitung}
+
+    %Kapitel 7.2 - Logodesign
+    \section{Logodesign}
+
 
 \end{document}
