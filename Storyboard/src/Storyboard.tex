@@ -14,6 +14,11 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox} % Custom page numbering
 
+\usepackage{titling}
+\usepackage{textcomp}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
 % Configure page numbering & footer
 \pagestyle{fancy}
 \fancyhf{}
@@ -24,8 +29,11 @@
 % Methadata
 \title{
     \includegraphics{media/frontpage.jpg}
-    Modul 152 \\
-    Multimediainhalte in einen Webauftritt integrieren}
+    \begin{center}
+        Modul 152 \\
+        Multimediainhalte in einen Webauftritt integrieren\\
+        Storyboard
+    \end{center}}
 \author{Tobias Hilfiker}
 \date{\today}
 
@@ -33,7 +41,9 @@
 \begin{document}
 
     %Kapitel Frontpage
-    \maketitle
+    \begin{titlingpage}
+        \maketitle
+    \end{titlingpage}
     \pagebreak
 
     %Kapitel Table of contents
@@ -46,8 +56,27 @@
     Dieses Storyboard soll eine Vorbereitung für das E-Portfolio sein, welches in einer separaten
     Dokumentation beschrieben wird.
 
-    \\ \\
-    \textbf{Spezielles}\\
+    %Kapitel 1.1 - Ziel dieses Storyboards
+    \subsection{Ziel dieses Storyboards}
+    Mit diesem Storyboard habe ich das Ziel, die grundlegenden Konzepte für das E-Portfolio zu definieren.
+    Dazu gehören Farbschemen, Logo, aber auch ein Mockup der Webseite.
+    Folgende Fragen sollen bis zum Ende des Storyboards geklärt sein:
+    \begin{itemize}
+        \item Wie soll das Logo des E-Portfolios aussehen?
+        \item Welche Farben sollen wo auf der Webseite verwendet werden? \textrightarrow Farbschema erstellen
+        \item Wie soll die grundsätzliche Struktur des E-Portfolios aussehen?
+                \textrightarrow Erstellung eines Mockups
+        \item Welche Technologien möchte ich für die Erstellung der Webseite verwenden?
+    \end{itemize}
+    \\
+    Neben den oben genannten Punkten möchte ich zudem bereits ein Bild, welches zum Thema passt bearbeiten.
+    Um dieses Bild zu machen, informiere ich mich vorher in den Unterrichtsunterlagen und im Internet, welche
+    Punkte beachtet werden müssen, um ein gutes Bild zu schiessen.
+    Auch bei der Bildbearbeitung werde ich ähnlich vorgehen. Nachdem die Bildbearbeitung gelungen ist, werde
+    ich eine Schritt-für-Schritt Anleitung zu dieser Bildbearbeitungsmethode ins Storyboard schreiben.
+
+    %Kapitel 1.2 - Spezielles
+    \subsection{Spezielles}
     Um das Storyboard und die Dokumentation zum E-Portfolio zu schreiben, verwende ich \latex. Das ist
     eine Skriptbasierte Dokumentationssprache, ähnlich wie Markdown. Primär gibt es zwei Unterschiede zu
     Markdown:
@@ -61,7 +90,7 @@
     %Kapitel 2 - Thema
     \section{Thema}
 
-    todo kleiner Text
+    %todo kleiner Text
 
     %Kapitel 2.1 - Wahl des Themas
     \subsection{Wahl des Themas}
@@ -74,7 +103,7 @@
 
     %Kapitel 3.1 - Menüstruktur
     \subsection{Menüstruktur}
-    Als Menü-Navigation habe ich mich für eine Navigation am oberen Teil der Webseite
+    Als Menü-Navigation habe ich mich für eine Navigation am oberen Teil der Webseite entschieden.
 
     %Kapitel 3.2 - Farbwahl
     \subsection{Farbwahl}
@@ -99,7 +128,6 @@
     %Kapitel 6 - Technisches Konzept E-Portfolio
     \section{Technisches Konzept E-Portfolio}
     -Welche Technologien werden verwendet
-    -
 
     %Kapitel 7 - Reflexion
     \section{Reflexion}
@@ -108,7 +136,15 @@
     \subsection{Bildbearbeitung}
 
     %Kapitel 7.2 - Logodesign
-    \section{Logodesign}
+    \subsection{Logodesign}
 
+    %Kapitel 8 - Verzeichnisse
+    \section{Verzeichnisse}
+
+    %Kapitel 8.1 - Abbildungsverzeichnis
+    \subsection{Abbildungsverzeichnis}
+
+    %Kapitel 8.2 - Glossar
+    \subsection{Glossar}
 
 \end{document}
