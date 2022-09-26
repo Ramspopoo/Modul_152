@@ -1,0 +1,18 @@
+#Pictures
+/curling_stone_logo_template.png
+/Fotos/
+
+#Compile-Folders of 'Dokumentation' LaTeX module
+/Dokumentation/auxil/
+/Dokumentation/out/
+
+#Example-Dokumentation-LaTeX Documentation
+/Dokumentation.tex
+
+#Compile-Folders of 'Storyboard' LaTeX module
+/Storyboard/auxil/
+/Storyboard/out/
+
+#Example-Documentation from Kai
+/ePortfolio_Kai_Zuberbühler.docx
+/storyboard_Kai_Zuberbühler.docx
