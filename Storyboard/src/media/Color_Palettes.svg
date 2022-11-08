@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="182" viewBox="0 0 800 182">
+  <g id="Gruppe_9" data-name="Gruppe 9" transform="translate(-80 -25)">
+    <g id="Gruppe_5" data-name="Gruppe 5">
+      <g id="Rechteck_4" data-name="Rechteck 4" transform="translate(80 50)" fill="#2c3333" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_5" data-name="Rechteck 5" transform="translate(80 89)" fill="#395b64" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_6" data-name="Rechteck 6" transform="translate(80 128)" fill="#a5c9ca" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_7" data-name="Rechteck 7" transform="translate(80 167)" fill="#e7f6f2" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+    </g>
+    <g id="Gruppe_6" data-name="Gruppe 6">
+      <g id="Rechteck_4-2" data-name="Rechteck 4" transform="translate(280 167)" fill="#e8f9fd" stroke="#737373" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_5-2" data-name="Rechteck 5" transform="translate(280 128)" fill="#79dae8" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_6-2" data-name="Rechteck 6" transform="translate(280 89)" fill="#0aa1dd" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_7-2" data-name="Rechteck 7" transform="translate(280 50)" fill="#2155cd" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+    </g>
+    <g id="Gruppe_7" data-name="Gruppe 7">
+      <g id="Rechteck_4-3" data-name="Rechteck 4" transform="translate(480 50)" fill="#002b5b" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_5-3" data-name="Rechteck 5" transform="translate(480 89)" fill="#2b4865" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_6-3" data-name="Rechteck 6" transform="translate(480 128)" fill="#256d85" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_7-3" data-name="Rechteck 7" transform="translate(480 167)" fill="#8fe3cf" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+    </g>
+    <g id="Gruppe_8" data-name="Gruppe 8">
+      <g id="Rechteck_4-4" data-name="Rechteck 4" transform="translate(680 50)" fill="#2f8f9d" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_5-4" data-name="Rechteck 5" transform="translate(680 89)" fill="#3bacb6" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_6-4" data-name="Rechteck 6" transform="translate(680 128)" fill="#82dbd8" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+      <g id="Rechteck_7-4" data-name="Rechteck 7" transform="translate(680 167)" fill="#b3e8e5" stroke="#707070" stroke-width="1">
+        <rect width="200" height="40" stroke="none"/>
+        <rect x="0.5" y="0.5" width="199" height="39" fill="none"/>
+      </g>
+    </g>
+    <text id="Farbpalette_1" data-name="Farbpalette 1" transform="translate(148 37)" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Farbpalette 1</tspan></text>
+    <text id="Farbpalette_2" data-name="Farbpalette 2" transform="translate(348 37)" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Farbpalette 2</tspan></text>
+    <text id="Farbpalette_3" data-name="Farbpalette 3" transform="translate(548 37)" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Farbpalette 3</tspan></text>
+    <text id="Farbpalette_4" data-name="Farbpalette 4" transform="translate(748 37)" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Farbpalette 4</tspan></text>
+  </g>
+</svg>
