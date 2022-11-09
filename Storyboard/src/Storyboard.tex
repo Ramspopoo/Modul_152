@@ -19,6 +19,7 @@
 \usepackage{wasysym}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{enumerate}
 \renewcommand\maketitlehooka{\null\mbox{}\vfill}
 \renewcommand\maketitlehookd{\vfill\null}
 
@@ -137,31 +138,6 @@
     Aussehen tut die Palette wie folgt:
 
     \includegraphics[width=\textwidth]{media/color_palette}
-    %todo folgenden text überarbeiten
-    %Als ich die obenstehende Auswahl an verschiedenen Farbpaletten zusammen hatte, habe ich diese anhand einer
-    %Entscheidungsmatrix ausgewertet und mich so für eine Palette entschieden. Da Farben auf verschiedene Menschen
-    %verschiedene Wirkungen haben, habe ich noch einige Klassenkameraden gefragt, was sie zu den verschiedenen
-    %Farbpaletten meinen.\\
-%
-    %\textbf{Kriterien}%TODO kriterien definieren
-    %\begin{itemize}
-    %    \item Passt zum Thema \textrightarrow
-    %    \item Kontrastwert \textrightarrow %TODO beschreiben wegen kontrastwert wie der gemessen wird und so
-    %\end{itemize}
-%
-    %\textbf{Entscheidungsmatrix}\\
-    %\begin{center}
-    %    \begin{tabular}{ | p{3cm} | p{2cm} | p{2.5cm} | p{2cm} | p{2cm} | p{2cm} | p{1.5cm} | }
-    %        \hline
-    %        & \textbf{Passt zum Thema} & \textbf{Kontrastwert} & \textbf{Meinung Michael Schädler} & \textbf{Meinung Nico Nussmüller} & \textbf{Meinung Mattia Müggler} & \textbf{Total}\\ \hline
-    %        \textbf{Farbpalette 1} & 1                        & 2                     & 3                                 & 4                                & 5                               & tot            \\ \hline
-    %        \textbf{Farbpalette 2} & 1                        & 2                     & 3                                 & 4                                & 5                               & tot            \\ \hline
-    %        \textbf{Farbpalette 2} & 1                        & 2                     & 3                                 & 4                                & 5                               & tot            \\ \hline
-    %        \textbf{Farbpalette 2} & 1                        & 2                     & 3                                 & 4                                & 5                               & tot            \\ \hline
-    %    \end{tabular}
-    %\end{center}
-    %\\
-    blablabla %TODO text
 
     %Kapitel 3.3 - Mockups
     \subsection{Mockups}
@@ -219,12 +195,42 @@
 
     %Kapitel 4 - Bildbearbeitung
     \section{Bildbearbeitung}
-    Für
+    Bei der Bildbearbeitung habe ich mich dazu entschieden, einen simplen schwarz-weiss Filter auf das Bild
+    anzuwenden, und einen Teil des Bildes wieder farbig zu machen.\\
+    Dafür habe ich GIMP verwendet, welches ein Open-Source Bildeditor ist, welchen wir im Unterricht im Modul
+    152 bereits näher kennengelernt haben.
 
-    \includegraphics[width=\textwidth]{media/Bearbeitet}
 
     %Kapitel 4.1 - Bildbearbeitungsmethode
     \subsection{Bildbearbeitungsmethode}
+    Ich habe mich für ein Foto aus der Vogelperspektive entschieden, da ich nur so die gesamte Spielfläche
+    auf das Bild bekomme. Fotografiert habe ich dieses mit einer Drohne, da ich andere Kameras nicht so hoch
+    über das Eis bekomme. Das unbearbeitete Foto sieht dann wie folgt aus:\\
+    \includegraphics[width=\textwidth]{media/unedited}
+
+    \\ \textbf{Anleitung zur Bildbearbeitung}\\
+    Im folgenden werde ich Schritt für Schritt erklären, wie ich das Bild bearbeitet habe.
+
+    \begin{enumerate}
+        \item Bild in GIMP importieren
+        \item In der Ebenenauswahl (standardmässig unten rechts) die aktuelle Ebene auswählen und mit rechts-klick
+        anwählen. Dort dann ``Ebene duplizieren'' anklicken.
+        \item Einer der Layer muss nun Schwarz-Weiss gefärbt werden. Dies kann unter ``Farben'' und dann
+        ``Entsättigen'' gemacht werden. %todo bild einfügen des dialogs
+        \item Auf dieser Ebene, welche entsättigt wurde und nun schwarz-weiss ist, wenden wir nun eine
+        Ebenenmaske an. Diese ist dafür da, dass wir anschliessend die Transparenz dieses Layers bearbeiten können.
+        Die Ebenenmaske kann in der Ebenenauswahl hinzugefügt werden. Dazu die entsprechende Ebene rechtsklicken und
+        anschliessend die Option ``Ebenenmaske hinzufügen'' auswählen. Im Dialog habe ich ausgewählt, dass eine weisse
+        Ebenenmaske hinzugefügt wird.
+        \item Das Pinselwerkzeug auswählen und auf eine brauchbare Grösse einstellen. Wichtig ist, dass ein zu grosser
+        Pinsel auch wieder zu viel Farbe aufdeckt.
+        \item Mit dem Pinselwerkzeug und gedrückter linker Maustaste diese Bereiche überfahren, welche wieder
+        farbig sein sollten.
+    \end{enumerate}
+
+    Das fertige Bild sieht dann wie folgt aus:\\
+    \includegraphics[width=\textwidth]{media/edited}
+
 
     %Kapitel 5 - Logo
     \section{Logo}

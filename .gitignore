@@ -19,3 +19,5 @@
 
 #.idea folder
 /.idea/
+/out/
+/auxil/
