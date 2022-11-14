@@ -12,6 +12,8 @@
 \usepackage{lastpage} % Custom page numbering
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{caption}
 \usepackage{tcolorbox} % Custom page numbering
 
 \usepackage{titling}
@@ -118,7 +120,7 @@
 
     %Kapitel 3.1 - Menüstruktur
     \subsection{Menüstruktur}
-    Als Menü-Navigation habe ich mich für eine Navigation am oberen Teil der Webseite entschieden.
+    Als Menü-Navigation habe ich mich für eine Navigation am oberen Teil der Webseite entschieden. %TODO text
 
     %Kapitel 3.2 - Farbwahl
     \subsection{Farbwahl}
@@ -198,10 +200,12 @@
 
     %Kapitel 3.3.2 - Design der Mockups
     \subsubsection{Design der Mockups}
+    %TODO text
 
     %Kapitel 3.3.3 - Mockups
     \subsubsection{Mockups}
     - Bilder der Mockups einfügen
+    %TODO text
 
     %Kapitel 4 - Bildbearbeitung
     \section{Bildbearbeitung}
@@ -258,7 +262,6 @@
     \end{enumerate}
 
     \pagebreak
-
     Das fertige Bild sieht dann wie folgt aus:\\
 
     \begin{figure}[h]
@@ -279,12 +282,71 @@
     Um diesen Ort dreht sich das ganze Spiel. Da auf den sogenannten Rinks (die einzelnen Bahnen) auch oft Werbung in
     das Eis eingelassen sind, habe ich so den Schriftzug ``Curling'' integriert.
 
-    %Kapitel 5.2 - Erstellung des Logos
-    \subsection{Erstellung des Logos}
-    Begonnen habe ich das Logo in Adobe xD.
+    \noindent\begin{minipage}{0.6\textwidth}
+                         %Kapitel 5.2 - Erstellung des Logos
+                 \subsection{Erstellung des Logos}
+                 Begonnen habe ich das Logo in Adobe xD. Dort hatte ich bereits die einzelnen Ringe des Hauses gezeichnet.
+                 Diese dienen während dem Spiel der einfacheren Bestimmung der Entfernung der Steine. Diese haben
+                 möglichst unterschiedliche Farben, dass die einzelnen Ringe eifach voneinander unterscheidbar sind.
+                 Dies habe ich hier realitästsgetreu nachgefärbt. Nach dem Zeichnen und färben der Ringe hat das Logo
+                 wie rechts ersichtlich ausgsesehen.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.3\textwidth}
+        \raggedleft
+        \includegraphics[width=\linewidth]{media/curling_logo_step1}
+        \captionof{figure}{Logo mit den eingefärbten Ringen des Hauses}
+    \end{minipage}
+
+    \noindent\begin{minipage}{0.6\textwidth}
+                 Die Curlingsteine sind ebenso simpel wie das Haus. Die Steine sind einzelne kleine Kreise aus xD, welche
+                 ich so gefärbt habe, dass sie den Farben des Curlings entsprechen. Bei einem richtigen Curlingstein ist
+                 von oben einerseits der farbige Plastikgriff (Fachbegriff ``Handle'') sichtbar, aber auch der Stein
+                 selbst zu sehen. Dies habe ich damit reproduziert, dass ich in xD die Rahmen des Kreises so skaliert
+                 habe, dass sie ungefähr dem reellen Verhältnis entsprachen. Die drei Steine, welche ich anschliessend
+                 irgendwo auf dem Haus plaziert habe, sind nun rechts ersichtlich.
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.3\textwidth}
+        \raggedleft
+        \includegraphics[width=\linewidth]{media/curling_stones}
+        \captionof{figure}{Curlingsteine}
+    \end{minipage}
+    \\\\\\Um nun wie geplant den Schriftzug ``Curling'' in das Haus einzubetten, habe ich GIMP verwendet, da ich zu xD keine
+    Anleitung gefunden habe, welche für mich funktioniert hat, um Text an einer Rundung zu biegen. Den bisherigen
+    Fortschritt habe ich also als SVG aus Adobe xD exportiert, und in GIMP wieder geöffnet.
+    Dort habe ich dann wie folgt die Schrift hinzugefügt:
+
+    \begin{enumerate}
+        \item Text ``Curling'' geschrieben
+        \item Eine neue Transparente Ebene erstellen
+        \item Auf dieser Transparenten Ebene mit dem ``elliptischen Auswahlwerkzeug'' genau den roten Kreis ausgewählt,
+        damit der Text später im weissen Kreis steht.
+        \item Im Kontextmenü ``Auswahl'' den Punkt ``Nach Pfad'' anklicken. So wird ein Pfad erstellt, entlang dessen
+        der Text später stehen wird.
+        \item Auf die Ebene mit dem Text zurück und dann mit Rechtsklick auf der Ebene den Punkt ``Text dem Pfad entlang''
+        auswählen. So wird der Text dem vorher erstellten Pfad entlang geschrieben.
+        \item Als nächsten Schritt wählt man wieder die transparente Ebene aus und drückt Ctrl + Alt + A, um die Auswahl
+        verschwinden zu lassen. Dann im Kontextmenü ``Auswahl'' den Punkt ``Nach Pfad'' auswählen.
+        \item Dann mit dem Füllwerkzeug den aktuell noch gestrichelten Text in der gewünschten Farbe ausfüllen.
+        \item Oben rechts gibt es einen Reiter ``Pfade''. Dort blendet man den Pfad dann mittels dem Auge aus.
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics{media/paths}
+            \caption{Reiter um Pfade ein- und auszublenden}
+        \end{figure}
+
+        \item In der Ebenenauswahl haben wir nun die transparente Ebene mit dem gebogenen Text, den originalen Text,
+        und in meinem Fall habe ich noch eine dritte Ebene mit dem bisherigen Fortschritt aus xD.
+        \item Nun kann ich den Originalen Text löschen, und den Transparenten Text mit dem Dreh- und Verschiebewerkzeug
+        so drehen und verschieben, dass er für mich passt.
+    \end{enumerate}
 
     %Kapitel 5.3 - Fertiges Logo
     \subsection{Fertiges Logo}
+    Aus GIMP wieder exportiert sah das fertige Logo wie folgt aus:
+
     \begin{figure}[h]
         \includegraphics[width=\textwidth]{media/curling_logo}
         \caption{Fertiges Logo des E-Portfolios}
@@ -293,15 +355,19 @@
     %Kapitel 6 - Technisches Konzept E-Portfolio
     \section{Technisches Konzept E-Portfolio}
     -Welche Technologien werden verwendet
+    %TODO text
 
     %Kapitel 7 - Reflexion
     \section{Reflexion}
+    %TODO text
 
     %Kapitel 7.1 - Bildbearbeitung
     \subsection{Bildbearbeitung}
+    %TODO text
 
     %Kapitel 7.2 - Logodesign
     \subsection{Logodesign}
+    %TODO text
 
     %Kapitel 8 - Abbildungsverzeichnis
     \section{Abbildungsverzeichnis}
