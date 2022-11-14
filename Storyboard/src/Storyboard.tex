@@ -23,6 +23,9 @@
 \renewcommand\maketitlehooka{\null\mbox{}\vfill}
 \renewcommand\maketitlehookd{\vfill\null}
 
+\renewcommand*\contentsname{Inhaltsverzeichnis}
+\renewcommand{\figurename}{Abb.}
+
 % Configure page numbering & footer
 \pagestyle{fancy}
 \fancyhf{}
@@ -32,7 +35,7 @@
 
 % Methadata
 \title{
-    \includegraphics{media/frontpage}
+    \includegraphics[width=\textwidth]{media/curling_logo}
     \begin{center}
         Modul 152 \\
         Multimediainhalte in einen Webauftritt integrieren\\
@@ -81,13 +84,13 @@
 
     %Kapitel 1.2 - Spezielles
     \subsection{Spezielles}
-    Um das Storyboard und die Dokumentation zum E-Portfolio zu schreiben, verwende ich \latex. Das ist
+    Um das Storyboard und die Dokumentation zum E-Portfolio zu schreiben, verwende ich \LaTeX. Das ist
     eine Skriptbasierte Dokumentationssprache, ähnlich wie Markdown. Primär gibt es zwei Unterschiede zu
     Markdown:
     \begin{enumerate}
-        \item \latex Dateien müssen kompiliert werden. Dazu gibt es verschiedene Compiler, welche aus den
+        \item \LaTeX Dateien müssen kompiliert werden. Dazu gibt es verschiedene Compiler, welche aus den
         .tex-Dateien dann z.B.\ ein Pdf kompilieren.
-        \item In ein \latex Dokument können beliebig viele Packages eingebunden werden. Das bedeutet, dass
+        \item In ein \LaTeX Dokument können beliebig viele Packages eingebunden werden. Das bedeutet, dass
         Elemente wie Diagramme, oder eigene Formatierungen einfach in das gleiche Dokument eingebunden werden.
     \end{enumerate}
 
@@ -129,14 +132,22 @@
     Daher sind die verschiedenen Farbpaletten auch sehr blau, da wir Menschen Blau mit Winter und Kälte
     assoziieren.
 
-    \includegraphics[width=\textwidth]{media/color_palettes}
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{media/color_palettes}
+        \caption{Verschiedene Farbpaletten von Colorhunt}
+    \end{figure}
+
+    \pagebreak
     Als ich die Paletten Timo gezeigt habe, un seine Meinung darüber einzuholen hat er alle nicht wirklich passend
     gefunden. Er hat mir noch ein weiteres Tool gezeigt, welche für Farbpaletten genutzt werden kann. Zudem hat er
     mir direkt eine Farbpalette gezeigt, welche ich für mein Thema verwenden kann. Diese hat auch mich mehr
     angesprochen wie diese Paletten, die ich herausgesucht hatte. Daher habe ich dann auch diese Palette verwendet.
     Aussehen tut die Palette wie folgt:
 
-    \includegraphics[width=\textwidth]{media/color_palette}
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{media/color_palette}
+        \caption{Farbpalette von Coolors, welche Timo mir empfohlen hat}
+    \end{figure}
 
     %Kapitel 3.3 - Mockups
     \subsection{Mockups}
@@ -205,9 +216,14 @@
     Ich habe mich für ein Foto aus der Vogelperspektive entschieden, da ich nur so die gesamte Spielfläche
     auf das Bild bekomme. Fotografiert habe ich dieses mit einer Drohne, da ich andere Kameras nicht so hoch
     über das Eis bekomme. Das unbearbeitete Foto sieht dann wie folgt aus:\\
-    \includegraphics[width=\textwidth]{media/unedited}
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{media/unedited}
+        \caption{Bild eines Curling-Hauses ohne Bearbeitung}
+    \end{figure}
 
-    \\ \textbf{Anleitung zur Bildbearbeitung}\\
+    \pagebreak
+
+    \textbf{Anleitung zur Bildbearbeitung}\\
     Im folgenden werde ich Schritt für Schritt erklären, wie ich das Bild bearbeitet habe.
 
     \begin{enumerate}
@@ -215,27 +231,64 @@
         \item In der Ebenenauswahl (standardmässig unten rechts) die aktuelle Ebene auswählen und mit rechts-klick
         anwählen. Dort dann ``Ebene duplizieren'' anklicken.
         \item Einer der Layer muss nun Schwarz-Weiss gefärbt werden. Dies kann unter ``Farben'' und dann
-        ``Entsättigen'' gemacht werden. %todo bild einfügen des dialogs
+        ``Entsättigen'' gemacht werden.
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[height=4cm]{media/menu_desaturate}
+            \caption{Dialog zum Entsättigen einer Ebene (Schritt 3)}
+        \end{figure}
+
         \item Auf dieser Ebene, welche entsättigt wurde und nun schwarz-weiss ist, wenden wir nun eine
         Ebenenmaske an. Diese ist dafür da, dass wir anschliessend die Transparenz dieses Layers bearbeiten können.
         Die Ebenenmaske kann in der Ebenenauswahl hinzugefügt werden. Dazu die entsprechende Ebene rechtsklicken und
         anschliessend die Option ``Ebenenmaske hinzufügen'' auswählen. Im Dialog habe ich ausgewählt, dass eine weisse
         Ebenenmaske hinzugefügt wird.
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[height=8cm]{media/layer_mask}
+            \caption{Dialog zum hinzufügen der Ebenenmaske}
+        \end{figure}
+
         \item Das Pinselwerkzeug auswählen und auf eine brauchbare Grösse einstellen. Wichtig ist, dass ein zu grosser
         Pinsel auch wieder zu viel Farbe aufdeckt.
         \item Mit dem Pinselwerkzeug und gedrückter linker Maustaste diese Bereiche überfahren, welche wieder
         farbig sein sollten.
     \end{enumerate}
 
+    \pagebreak
+
     Das fertige Bild sieht dann wie folgt aus:\\
-    \includegraphics[width=\textwidth]{media/edited}
+
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{media/edited}
+        \caption{Bild eines Curling-Hauses mit Schwarz-Weiss Filter über allem, ausser den Steinen}
+    \end{figure}
 
 
     %Kapitel 5 - Logo
     \section{Logo}
+    Zu einem E-Portfolio gehört natürlich auch ein passendes Logo. In den folgenden Kapiteln werde ich erläutern, was
+    die Idee hinter dem Logo ist, wie das Logo designt wurde und wie das Logo aussieht.
 
     %Kapitel 5.1 - Idee
     \subsection{Idee}
+    Die Idee hinter dem Logo ist eigentlich recht simpel. Das Logo soll den Curling-Sport auf einen Blick zeigen. Ich
+    persönlich habe dabei an das Curling Haus gedacht, also der Teil des Spielfeldes, in den die Steine gespielt werden.
+    Um diesen Ort dreht sich das ganze Spiel. Da auf den sogenannten Rinks (die einzelnen Bahnen) auch oft Werbung in
+    das Eis eingelassen sind, habe ich so den Schriftzug ``Curling'' integriert.
+
+    %Kapitel 5.2 - Erstellung des Logos
+    \subsection{Erstellung des Logos}
+    Begonnen habe ich das Logo in Adobe xD.
+
+    %Kapitel 5.3 - Fertiges Logo
+    \subsection{Fertiges Logo}
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{media/curling_logo}
+        \caption{Fertiges Logo des E-Portfolios}
+    \end{figure}
 
     %Kapitel 6 - Technisches Konzept E-Portfolio
     \section{Technisches Konzept E-Portfolio}
@@ -250,13 +303,10 @@
     %Kapitel 7.2 - Logodesign
     \subsection{Logodesign}
 
-    %Kapitel 8 - Verzeichnisse
-    \section{Verzeichnisse}
-
-    %Kapitel 8.1 - Abbildungsverzeichnis
-    \subsection{Abbildungsverzeichnis}
-
-    %Kapitel 8.2 - Glossar
-    \subsection{Glossar}
+    %Kapitel 8 - Abbildungsverzeichnis
+    \section{Abbildungsverzeichnis}
+    \begin{appendix}
+        \listoffigures
+    \end{appendix}
 
 \end{document}
