@@ -2,6 +2,7 @@
 /curling_stone_logo_template.png
 /Fotos/
 /Curling_Logo.xcf
+/Curling_Logo.jpg
 
 #Compile-Folders of 'Dokumentation' LaTeX module
 /Dokumentation/auxil/
@@ -17,6 +18,9 @@
 #Example-Documentation from Kai
 /ePortfolio_Kai_Zuberbühler.docx
 /storyboard_Kai_Zuberbühler.docx
+
+#Handins
+/Abgabe/
 
 #.idea folder
 /.idea/
