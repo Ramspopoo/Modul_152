@@ -10,31 +10,59 @@
 \usepackage[a4paper, margin=0.8in]{geometry} % Set the margin and size of a page
 \usepackage[hidelinks]{hyperref} % Remove Boxes around Hyperlinks
 \usepackage{lastpage} % Custom page numbering
+\usepackage{pgfgantt} % Gantt-Tables
 \usepackage{fancyhdr}
-\usepackage{graphicx} % Custom page numbering
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{mwe}
+\usepackage{caption}
+\usepackage{tcolorbox} % Custom page numbering
+
+\usepackage{titling}
+\usepackage{textcomp}
+\usepackage{wasysym}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumerate}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+\renewcommand*\contentsname{Inhaltsverzeichnis}
+\renewcommand{\figurename}{Abb.}
 
 % Configure page numbering & footer
 \pagestyle{fancy}
 \fancyhf{}
 \lfoot{Tobias Hilfiker}
-\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\cfoot{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
 \rfoot{\today}
 
 % Methadata
-\title{\includegraphics{media/frontpage.jpg}
-Modul 152 \\
-Multimediainhalte in einen Webauftritt integrieren}
+\title{
+    \includegraphics[width=\textwidth]{media/curling_logo}
+    \begin{center}
+        Modul 152 \\
+        Multimediainhalte in einen Webauftritt integrieren\\
+        E-Portfolio
+    \end{center}}
 \author{Tobias Hilfiker}
 \date{\today}
 
 % Document
 \begin{document}
 
-    % Frontpage
-    \maketitle
+    %Kapitel Frontpage
+    \begin{titlingpage}
+        \maketitle
+    \end{titlingpage}
     \pagebreak
 
-    %Table of contents
+    %Kapitel Table of contents
     \tableofcontents
+    \pagebreak
+
+    %Kapitel 1 - Einleitung
+    \section{Einleitung}
+
 
 \end{document}
