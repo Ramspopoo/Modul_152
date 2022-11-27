@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-s-h1;
+
+  @screen md {
+    @apply text-h1;
+  }
+}
