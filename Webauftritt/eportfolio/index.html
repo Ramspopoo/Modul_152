@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <h1>Hallo Tobias</h1>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/png" href="/curling_logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Curling E-Portfolio</title>
+</head>
+<body class="bg-primary">
 
-    <script type="module" src="/main.js"></script>
-  </body>
+{{> nav homeActive=true }}
+
+<h1 class="flex justify-center">Welcome to the world of Curling!</h1> <!--todo refine the positioning of text on page-->
+
+<!--
+todo -> bind to bottom of page
+-->
+<div class="h-40 bg-banner flex justify-between items-center px-40 mb-14 mt-auto">
+    <a href="rules.html" class="flex flex-col align-middle">
+        <img src="./public/rules.svg" alt="Regeln" class="w-20 h-20"/>
+        <p class="text-center">Regeln</p>
+    </a>
+    <a href="howto.html" class="flex flex-col align-middle">
+        <img src="./public/question.svg" alt="How to Play" class="w-20 h-20"/>
+        <p class="text-center">How to play</p>
+    </a>
+    <a href="spiritofcurling.html" class="flex flex-col align-middle">
+        <img src="./public/rules.svg" alt="Spirit of Curling" class="w-20 h-20"/>
+        <!--todo replace icon with actual icon-->
+        <p class="text-center">Spirit of Curling</p>
+    </a>
+    <a href="examles.html" class="flex flex-col align-middle">
+        <img src="./public/extension.svg" alt="Beispiele" class="w-20 h-20"/>
+        <p class="text-center">Beispiele</p>
+    </a>
+</div>
+
+<!--TODO: links to pages with icons-->
+
+<script type="module" src="/main.js"></script>
+</body>
 </html>
