@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.{html,js}"],
+    content: ["./*.{html,js}",
+    "./partials/*.hbs"],
     theme: {
         extend: {
             colors: {
@@ -11,7 +12,9 @@ module.exports = {
             },
             fontSize: {
                 's-h1': '50px',
-                h1: '56px'
+                h1: '56px',
+                's-h2': '60px',
+                h2: '60px'
             }
         },
     },
