@@ -4,53 +4,61 @@
     <meta charset="UTF-8">
     <title>Rules</title>
 </head>
-<body class="bg-primary">
+<body class="bg-primary flex flex-col min-h-screen">
 
 {{> nav rulesActive=true }}
 
-<h1 class="flex justify-center">Regeln</h1>
+<div class="home grow">
 
-<div class="h-full grid grid-cols-3 gap-0.5 content-start p-16">
-    {{> ruleitem
-    image="/rules/fgz.svg"
-    imageAlt="Free Guard Zone"
-    title="Free Guard Zone (FGZ)"
-    description="Die Free Guard Zone (im Bild grün) definiert, dass bis zum 6. gespielten Stein keine Guard
-    aus dem Spiel genommen werden darf."
-    }}
+    <h1 class="flex justify-center">Regeln</h1>
 
-    {{> ruleitem
-    image="/rules/validStone.svg"
-    imageAlt="Gültigkeitsbereich Steine"
-    title="Gültigkeit der Steine"
-    description="Die Steine sind nicht überall gültig. So müssen sie zwischen Hog-Line und Back-Line liegen, um gültig zu sein.
-    (im Bild grün markiert)"
-    }}
+    <div class="h-full grid grid-cols-3 gap-0.5 content-start p-16">
+        {{> ruleitem
+        image="/rules/fgz.svg"
+        imageAlt="Free Guard Zone"
+        title="Free Guard Zone (FGZ)"
+        description="Die Free Guard Zone (im Bild grün) definiert, dass bis zum 6. gespielten Stein keine Guard
+        aus dem Spiel genommen werden darf."
+        }}
 
-    {{> ruleitem
-    image="/rules/broomVsStone.svg"
-    imageAlt="Wischbereich gegnerischer Stein"
-    title="Wischen des gegnerischen Steins"
-    description="Hinter der Tee-Line (grün eingezeichneter Bereich) darf ein gegnerischer Stein durch jemanden gewischt werden.
-    So kann dieser aus dem Spiel genommen werden."
-    }}
+        {{> ruleitem
+        image="/rules/validStone.svg"
+        imageAlt="Gültigkeitsbereich Steine"
+        title="Gültigkeit der Steine"
+        description="Die Steine sind nicht überall gültig. So müssen sie zwischen Hog-Line und Back-Line liegen, um
+        gültig zu sein.
+        (im Bild grün markiert)"
+        }}
 
-    {{> ruleitem
-    image="/rules/stoneOrder.svg"
-    imageAlt="Steinreihenfolge"
-    title="Steinreihenfolge"
-    description="Die je acht Steine pro Team werden alternierend gespielt. Zu beginn des Spiels wird jeweils ausgelost, welches
-    Team das Recht des letzten Stein bekommt. Das andere Team beginnt dann logischerweise das Spiel."
-    }}
+        {{> ruleitem
+        image="/rules/broomVsStone.svg"
+        imageAlt="Wischbereich gegnerischer Stein"
+        title="Wischen des gegnerischen Steins"
+        description="Hinter der Tee-Line (grün eingezeichneter Bereich) darf ein gegnerischer Stein durch jemanden
+        gewischt werden.
+        So kann dieser aus dem Spiel genommen werden."
+        }}
 
-    {{> ruleitem
-    image="/rules/countOrder.svg"
-    imageAlt="Zählung des Spielstands"
-    title="Zählen des Spielstandes"
-    description="Um am Ende eines Spiels den Spielstand herauszufinden, werden die Steine vom Zentrum her weg gezählt. Sobald
-    ein gegnerischer Stein näher ist, zählen nur alle bis dahin gezählten Steine. Im obigen Spielstand wären das zwei Steine für
-    gelb, obwohl noch zwei rote Steine im Haus liegen."
-    }}
+        {{> ruleitem
+        image="/rules/stoneOrder.svg"
+        imageAlt="Steinreihenfolge"
+        title="Steinreihenfolge"
+        description="Die je acht Steine pro Team werden alternierend gespielt. Zu beginn des Spiels wird jeweils
+        ausgelost, welches
+        Team das Recht des letzten Stein bekommt. Das andere Team beginnt dann logischerweise das Spiel."
+        }}
+
+        {{> ruleitem
+        image="/rules/countOrder.svg"
+        imageAlt="Zählung des Spielstands"
+        title="Zählen des Spielstandes"
+        description="Um am Ende eines Spiels den Spielstand herauszufinden, werden die Steine vom Zentrum her weg
+        gezählt. Sobald
+        ein gegnerischer Stein näher ist, zählen nur alle bis dahin gezählten Steine. Im obigen Spielstand wären das
+        zwei Steine für
+        gelb, obwohl noch zwei rote Steine im Haus liegen."
+        }}
+    </div>
 </div>
 
 {{> footer }}

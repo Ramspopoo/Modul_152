@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <title>Beispiele</title>
 </head>
-<body class="bg-primary">
+<body class="bg-primary flex flex-col min-h-screen">
 
 {{> nav impressionsActive=true}}
 
-<h1 class="flex justify-center">Impressionen</h1>
+<div class="home grow">
 
-<div class="flex justify-center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bruNTJCsZPM?controls=0"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-</div>
+    <h1 class="flex justify-center">Impressionen</h1>
 
-<div class="flex flex-col items-center">
-    <img class="w-1/2 m-10" src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645823/stones_colored.jpg"/>
-    <img class="w-1/2 m-10" src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645801/no_advertisements.jpg"/>
-    <img class="w-1/2 m-10" src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645802/anti_glare.jpg"/>
+    <div class="flex justify-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bruNTJCsZPM?controls=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+
+    <div class="flex flex-col items-center">
+        <img class="w-1/2 m-10" src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645823/stones_colored.jpg"/>
+        <img class="w-1/2 m-10"
+             src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645801/no_advertisements.jpg"/>
+        <img class="w-1/2 m-10" src="https://res.cloudinary.com/dgyrt6b4m/image/upload/v1671645802/anti_glare.jpg"/>
+    </div>
 </div>
 
 {{> footer }}
