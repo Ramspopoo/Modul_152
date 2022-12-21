@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Rules</title>
@@ -8,57 +8,31 @@
 
 {{> nav rulesActive=true }}
 
-<h1 class="flex justify-center">Regeln</h1> <!--todo refine the positioning of text on page-->
+<h1 class="flex justify-center">Regeln</h1>
 
 <div class="max-h-96 flex justify-between items-center px-20 mb-14 mt-auto"
      style="background: #9AD1D4;
   background: linear-gradient(180deg, #9AD1D4 50%, #007EA7 50%);">
 
     <div class="flex items-center flex-col">
-        <img src="/fgz.svg" alt="Free Guard Zone" class="w-72"/>
+        <img src="/rules/fgz.svg" alt="Free Guard Zone" class="w-72"/>
         <h3>Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
+        <p>Die Free Guard Zone (im Bild grün) definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
             darf.</p>
     </div>
 
     <div class="flex items-center flex-col">
-        <img src="/example_rule.png" alt=""/>
-        <h3 class="text-center">Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
+        <img src="/rules/validStone.svg" alt="" class="w-72"/>
+        <h3 class="text-center">Gültigkeit der Steine</h3>
+        <p>Die Steine sind nicht überall gültig. So müssen sie zwischen Hog-Line und Back-Line liegen, um gültig zu sein.
+            (im Bild grün markiert)</p>
     </div>
 
     <div class="flex items-center flex-col">
-        <img src="/example_rule.png" alt=""/>
-        <h3>Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
-    </div>
-</div>
-
-<div class="max-h-96 flex justify-between items-center px-20 mb-14 mt-auto"
-     style="background: #9AD1D4;
-  background: linear-gradient(180deg, #9AD1D4 50%, #007EA7 50%);">
-
-    <div class="flex items-center flex-col">
-        <img src="/example_rule.png" alt=""/>
-        <h3>Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
-    </div>
-
-    <div class="flex items-center flex-col">
-        <img src="/example_rule.png" alt=""/>
-        <h3 class="text-center">Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
-    </div>
-
-    <div class="flex items-center flex-col">
-        <img src="/example_rule.png" alt=""/>
-        <h3>Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
+        <img src="/rules/broomVsStone.svg" alt="" class="w-72"/>
+        <h3>Wischen des gegnerischen Steins</h3>
+        <p>Hinter der Tee-Line (grün eingezeichneter Bereich) darf ein gegnerischer Stein durch jemanden gewischt werden.
+        So kann dieser aus dem Spiel genommen werden.</p>
     </div>
 </div>
 
