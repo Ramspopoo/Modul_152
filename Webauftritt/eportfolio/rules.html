@@ -10,30 +10,47 @@
 
 <h1 class="flex justify-center">Regeln</h1>
 
-<div class="max-h-96 flex justify-between items-center px-20 mb-14 mt-auto"
-     style="background: #9AD1D4;
-  background: linear-gradient(180deg, #9AD1D4 50%, #007EA7 50%);">
+<div class="h-full grid grid-cols-3 gap-0.5 content-start p-16">
+    {{> ruleitem
+    image="/rules/fgz.svg"
+    imageAlt="Free Guard Zone"
+    title="Free Guard Zone (FGZ)"
+    description="Die Free Guard Zone (im Bild grün) definiert, dass bis zum 6. gespielten Stein keine Guard
+    aus dem Spiel genommen werden darf."
+    }}
 
-    <div class="flex items-center flex-col">
-        <img src="/rules/fgz.svg" alt="Free Guard Zone" class="w-72"/>
-        <h3>Free Guard Zone (FGZ)</h3>
-        <p>Die Free Guard Zone (im Bild grün) definiert, dass bis zum 6. gespielten Stein keine Guard aus dem Spiel genommen werden
-            darf.</p>
-    </div>
+    {{> ruleitem
+    image="/rules/validStone.svg"
+    imageAlt="Gültigkeitsbereich Steine"
+    title="Gültigkeit der Steine"
+    description="Die Steine sind nicht überall gültig. So müssen sie zwischen Hog-Line und Back-Line liegen, um gültig zu sein.
+    (im Bild grün markiert)"
+    }}
 
-    <div class="flex items-center flex-col">
-        <img src="/rules/validStone.svg" alt="" class="w-72"/>
-        <h3 class="text-center">Gültigkeit der Steine</h3>
-        <p>Die Steine sind nicht überall gültig. So müssen sie zwischen Hog-Line und Back-Line liegen, um gültig zu sein.
-            (im Bild grün markiert)</p>
-    </div>
+    {{> ruleitem
+    image="/rules/broomVsStone.svg"
+    imageAlt="Wischbereich gegnerischer Stein"
+    title="Wischen des gegnerischen Steins"
+    description="Hinter der Tee-Line (grün eingezeichneter Bereich) darf ein gegnerischer Stein durch jemanden gewischt werden.
+    So kann dieser aus dem Spiel genommen werden."
+    }}
 
-    <div class="flex items-center flex-col">
-        <img src="/rules/broomVsStone.svg" alt="" class="w-72"/>
-        <h3>Wischen des gegnerischen Steins</h3>
-        <p>Hinter der Tee-Line (grün eingezeichneter Bereich) darf ein gegnerischer Stein durch jemanden gewischt werden.
-        So kann dieser aus dem Spiel genommen werden.</p>
-    </div>
+    {{> ruleitem
+    image="/rules/stoneOrder.svg"
+    imageAlt="Steinreihenfolge"
+    title="Steinreihenfolge"
+    description="Die je acht Steine pro Team werden alternierend gespielt. Zu beginn des Spiels wird jeweils ausgelost, welches
+    Team das Recht des letzten Stein bekommt. Das andere Team beginnt dann logischerweise das Spiel."
+    }}
+
+    {{> ruleitem
+    image="/rules/countOrder.svg"
+    imageAlt="Zählung des Spielstands"
+    title="Zählen des Spielstandes"
+    description="Um am Ende eines Spiels den Spielstand herauszufinden, werden die Steine vom Zentrum her weg gezählt. Sobald
+    ein gegnerischer Stein näher ist, zählen nur alle bis dahin gezählten Steine. Im obigen Spielstand wären das zwei Steine für
+    gelb, obwohl noch zwei rote Steine im Haus liegen."
+    }}
 </div>
 
 {{> footer }}
