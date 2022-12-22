@@ -11,21 +11,26 @@
 {{> nav homeActive=true }}
 
 <div class="home grow">
-    <h1 class="flex justify-center">Welcome to the world of Curling!</h1>
+    <h1 class="flex justify-center text-center">Welcome to the world of Curling!</h1>
 
-    <div class="h-40 bg-banner flex justify-between items-center px-40 mb-14">
-        <a href="rules.html" class="flex flex-col align-middle">
-            <img src="/rules.svg" alt="Regeln" class="w-20 h-20"/>
-            <p class="text-center">Regeln</p>
-        </a>
-        <a href="spiritofcurling.html" class="flex flex-col align-middle">
-            <img src="/spirit.svg" alt="Spirit of Curling" class="w-20 h-20"/>
-            <p class="text-center">Spirit of Curling</p>
-        </a>
-        <a href="impressions.html" class="flex flex-col align-middle">
-            <img src="/extension.svg" alt="Beispiele" class="w-20 h-20"/>
-            <p class="text-center">Beispiele</p>
-        </a>
+    <div class="flex h-auto bg-banner md:flex-row flex-col justify-center my-5">
+        {{> banneritem
+        href="rules.html"
+        img="/rules.svg"
+        imgalt="Regeln"
+        text="Regeln"}}
+
+        {{> banneritem
+        href="spiritofcurling.html"
+        img="/spirit.svg"
+        imgalt="Spirit of Curling"
+        text="Spirit of Curling"}}
+
+        {{> banneritem
+        href="impressions.html"
+        img="/extension.svg"
+        imgalt="Beispiele"
+        text="Beispiele"}}
     </div>
 </div>
 
