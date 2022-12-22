@@ -1,9 +1,56 @@
-<nav class="bg-navbackground h-32 text-right flex flex-row justify-between items-center px-20">
-    <a href="index.html"> <img src="/curling_logo.png" alt="Logo" class="h-28"/></a>
-    <div class="flex justify-between w-1/3 text-textcolor">
-        <a href="index.html" class="{{#if homeActive}}font-bold{{/if}}">Home</a>
-        <a href="rules.html" class="{{#if rulesActive}}font-bold{{/if}}">Regeln</a>
-        <a href="spiritofcurling.html" class="{{#if spiritActive}}font-bold{{/if}}">Spirit of Curling</a>
-        <a href="impressions.html" class="{{#if impressionsActive}}font-bold{{/if}}">Impressionen</a>
+<nav class="p-5 bg-navbackground shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+        <a href="index.html"> <img src="/curling_logo.png" alt="Logo" class="h-28"/></a>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <img src="/menu.svg" onclick="function Menu(e){
+            let element = document.getElementById('menu-mobile');
+            element.classList.remove('opacity-0');
+            element.classList.remove('pointer-events-none');
+        }
+            Menu(this)"/>
+      </span>
     </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute text-textcolor w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+            <a href="index.html" class="{{#if homeActive}}font-bold{{/if}}">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="rules.html" class="{{#if rulesActive}}font-bold{{/if}}">Regeln</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="spiritofcurling.html" class="{{#if spiritActive}}font-bold{{/if}}">Spirit of Curling</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="impressions.html" class="{{#if impressionsActive}}font-bold{{/if}}">Impressionen</a>
+        </li>
+    </ul>
+
+    <ul id="menu-mobile"
+        class="pointer-events-none opacity-0 fixed backdrop-blur top-0 left-0 right-0 bottom-0 md:hidden flex flex-col items-center content-center text-textcolor">
+        <li class="mx-4 mb-6 mt-10 md:my-0">
+            <img src="/close.svg" class="top-10" onclick="function Menu(e){
+                let element = document.getElementById('menu-mobile');
+                element.classList.add('opacity-0');
+                element.classList.add('pointer-events-none');
+            }
+                Menu(this)"/>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <img src="/curling_logo.png" alt="Logo" class="h-28"/>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="index.html" class="{{#if homeActive}}font-bold{{/if}}">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="rules.html" class="{{#if rulesActive}}font-bold{{/if}}">Regeln</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="spiritofcurling.html" class="{{#if spiritActive}}font-bold{{/if}}">Spirit of Curling</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="impressions.html" class="{{#if impressionsActive}}font-bold{{/if}}">Impressionen</a>
+        </li>
+    </ul>
 </nav>

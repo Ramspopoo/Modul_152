@@ -12,9 +12,7 @@ module.exports = {
             },
             fontSize: {
                 's-h1': '50px',
-                h1: '56px',
-                's-h2': '60px',
-                h2: '60px'
+                h1: '56px'
             }
         },
     },
